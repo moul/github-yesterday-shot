@@ -11,7 +11,8 @@ rm -f shot.png
 pageres \
      "https://github.com/${username}?tab=overview&from=${date}&to=${date}" \
      --selector=.profile-timeline \
-     --css=".profile-timeline{padding:20px;border 0;.profile-timeline.discussion-timeline::before{background:transparent}" \
+     --css=".profile-timeline{padding:20px;border 0}.profile-timeline.discussion-timeline::before{background:transparent}.profile-rollup-content{display:block}" \
+     --overwrite \
      --filename=shot
 
 # result
