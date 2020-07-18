@@ -14,6 +14,9 @@ convert:
 wipchat:
 	wipchat done --attach full.png "🐙 yesterday on GitHub #oss"
 
+.PHONY: makerlog
+makerlog:
+	makerlog done --attach full.png "🐙 yesterday on GitHub #oss"
 
 .PHONY: docker
 docker:
