@@ -1,5 +1,5 @@
 .PHONY: all
-all: docker convert wipchat
+all: docker convert makerinbox
 
 .PHONY: convert
 convert:
@@ -9,6 +9,10 @@ convert:
 	  \( moul-bot.png +append \) \
 	  \( shot-moul-bot.png +append \) \
 	  -background white -append full.png
+
+.PHONY: makerinbox
+makerinbox:
+	makerinbox done --attach full.png "🐙 yesterday on GitHub #oss"
 
 .PHONY: wipchat
 wipchat:
