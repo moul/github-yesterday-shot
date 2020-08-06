@@ -1,5 +1,5 @@
-.PHONY: all
-all: docker convert makerinbox
+OB.PHONY: all
+all: clean local convert makerinbox
 
 .PHONY: convert
 convert:
@@ -12,15 +12,15 @@ convert:
 
 .PHONY: makerinbox
 makerinbox:
-	makerinbox done --attach full.png "🐙 yesterday on GitHub #oss"
+	makerinbox done --attach full.png ":octopus: yesterday on GitHub #oss"
 
 .PHONY: wipchat
 wipchat:
-	wipchat done --attach full.png "🐙 yesterday on GitHub #oss"
+	wipchat done --attach full.png ":octopus: yesterday on GitHub #oss"
 
 .PHONY: makerlog
 makerlog:
-	makerlog done --attach full.png "🐙 yesterday on GitHub #oss"
+	makerlog done --attach full.png ":octopus: yesterday on GitHub #oss"
 
 .PHONY: docker
 docker:
@@ -39,3 +39,7 @@ local:
 	mv shot.png shot-moul.png
 	../shot.sh moul-bot
 	mv shot.png shot-moul-bot.png
+
+.PHONY: clean
+clean:
+	rm -f shot-moul.png shot-moul-bot.png
