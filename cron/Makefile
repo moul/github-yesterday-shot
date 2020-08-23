@@ -12,7 +12,7 @@ convert:
 
 .PHONY: makerinbox
 makerinbox:
-	makerinbox done --attach full.png ":octopus: yesterday on GitHub #oss"
+	makerinbox done --force --attach full.png ":octopus: yesterday on GitHub #oss"
 
 .PHONY: wipchat
 wipchat:
