@@ -1,0 +1,9 @@
+{
+  "name": "github-yesterday-shot-cron",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "pageres-cli": "^6.0.0"
+  }
+}
