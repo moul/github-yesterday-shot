@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "capture-website-cli": "^1.1.0",
     "pageres-cli": "^6.0.0"
   }
 }
