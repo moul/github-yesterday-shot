@@ -1,6 +1,6 @@
 # based on https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-in-docker
 
-FROM node:10-slim
+FROM node:20-slim
 RUN apt-get -q update \
     && apt-get install -y -qq wget gnupg make \
     && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
